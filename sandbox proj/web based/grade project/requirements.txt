@@ -1,0 +1,14 @@
+# Network Scanner Web Application Requirements
+# Python 3.8+
+
+# Web Framework
+Flask==3.0.0
+Werkzeug==3.0.1
+
+# Network Scanning
+python-nmap==0.7.1
+
+# Additional utilities (if needed in future)
+# Uncomment if you plan to add these features:
+# requests==2.31.0
+# jinja2==3.1.2

@@ -1,0 +1,248 @@
+/* ========================================
+   NETWORK SECURITY SCANNER - STYLES
+   Modern, Professional Dashboard Design
+   ======================================== */
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Card Enhancements */
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    font-weight: 600;
+}
+
+/* Metric Boxes (Speed Test Style) */
+.metric-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.metric-box:hover {
+    background: #e9ecef;
+    transform: scale(1.05);
+}
+
+.metric-box h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Progress Bar Enhancements */
+.progress {
+    border-radius: 10px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+/* Animated Progress Bar */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.progress-bar-animated {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Live Output Console */
+#liveOutput {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #00ff00;
+}
+
+#liveOutput code {
+    color: #00ff00;
+}
+
+/* Button Enhancements */
+.btn {
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-lg {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+}
+
+/* Navbar Styling */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/* Table Styling */
+.table-responsive {
+    border-radius: 10px;
+}
+
+table {
+    background: white;
+}
+
+table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* Report Content Styling */
+.report-content {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.report-content h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #667eea;
+}
+
+.report-content h2 {
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.report-content table {
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: -100px;  
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .metric-box h4 {
+        font-size: 1.5rem;
+    }
+
+    .btn-lg {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+
+/* Loading Spinner */
+.spinner-border-lg {
+    width: 4rem;
+    height: 4rem;
+    border-width: 0.4em;
+}
+
+/* Status Indicators */
+.status-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.status-success {
+    background-color: #28a745;
+    box-shadow: 0 0 8px #28a745;
+}
+
+.status-warning {
+    background-color: #ffc107;
+    box-shadow: 0 0 8px #ffc107;
+}
+
+.status-danger {
+    background-color: #dc3545;
+    box-shadow: 0 0 8px #dc3545;
+}
+
+.status-info {
+    background-color: #17a2b8;
+    box-shadow: 0 0 8px #17a2b8;
+}
+
+/* Pulse Animation */
+@keyframes pulse-ring {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.pulse-animation {
+    animation: pulse-ring 1.5s ease-out infinite;
+}
